@@ -1,4 +1,4 @@
-Access the website at: http://localhost:8000
+Access the website at: http://127.0.0.1:8000/ 
 Galvanic Music: A Django Streaming Platform 🎧
 A modern, Django-based music streaming website featuring robust user authentication, personalized playlists, and powerful song search/filtering capabilities.
 
