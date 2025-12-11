@@ -1,81 +1,73 @@
-# Django based music streaming website
-> https://galvanic-music.herokuapp.com/
+ Galvanic Music: A Django Streaming Platform 🎧
+A modern, Django-based music streaming website featuring robust user authentication, personalized playlists, and powerful song search/filtering capabilities.
 
-![GitHub stars](https://img.shields.io/github/stars/varadbhogayata/music-player) 
-![GitHub forks](https://img.shields.io/github/forks/varadbhogayata/music-player)
-[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/varadbhogayata/music-player/commits/master)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://galvanic-music.herokuapp.com/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+Features
+This platform is packed with features to provide a complete music streaming experience:
 
-### Website Preview
-#### Home Page
-<img src="website_images/Home.png" width="900">
+Secure Authentication: Supports standard SignUp and SignIn and integrates Google SignUp and SignIn for ease of access.
 
-#### Detail Page
-<img src="website_images/Detail.png" width="900">
+Core Playback: Play songs and view detailed information for each track.
 
-----
+Search & Filter: Quickly find songs using a dedicated search function or filter results based on language and singer.
 
-## Installation 📦
+Personalization:
 
->pip install -r requirements.txt
+Create new playlists and easily Add/Remove songs from them.
 
-#### Clone
+Manage your listening list by adding/removing songs to/from favourites.
 
-- Clone this repo to your local machine.
+Activity Tracking: Scroll through your recently played/viewed songs.
 
-#### Run server locally
+Exploration: Explore music through your personalized playlist and favourites sections.
 
-```shell
-$ python manage.py runserver
-```
-> Go to localhost:8000
+Website Preview
+Get a look at the application interface:
 
----
+Home Page
+<img src="website_images/Home.png" width="900" alt="Screenshot of the Galvanic Music home page">
 
-## Features 📋
-⚡️ SignUp and SignIn option.\
-⚡️ Google SignUp and SignIn option.\
-⚡️ Play song, view detailed information of song.\
-⚡️ Search songs.\
-⚡️ Filter songs based on language and singer.\
-⚡️ Create new playlist.\
-⚡️ Add/Remove songs to/from playlist.\
-⚡️ Add/Remove songs to/from favourites.\
-⚡️ Scroll through recently played/viewed songs.\
-⚡️ Explore songs through your personalized playlist and favourites.
+Detail Page
+<img src="website_images/Detail.png" width="900" alt="Screenshot of a song's detail page">
 
+Installation and Setup
+Follow these steps to get the project running on your local machine.
 
----
+Prerequisites
+You need Python and pip installed.
 
-## Contributing 💡
+Step 1: Clone the Repository
+Clone this repository to your local machine:
 
+Shell
 
-#### Step 1
+git clone <repo_url>
+cd music-player
+Step 2: Install Dependencies
+Install all required Python packages using the requirements.txt file:
 
-- **Option 1**
-    - 🍴 Fork this repo!
+Shell
 
-- **Option 2**
-    - 👯 Clone this repo to your local machine.
+pip install -r requirements.txt
+Step 3: Run the Server
+Start the Django development server:
 
+Shell
 
-#### Step 2
+python manage.py runserver
+Access the website at: http://localhost:8000
 
-- **Build your code** 🔨🔨🔨
+Contributing
+We welcome contributions to make Galvanic Music even better!
 
-#### Step 3
+Process
+Fork the repository (Option 1) OR Clone the repository to your local machine (Option 2).
 
-- 🔃 Create a new pull request.
+Create your feature branch (git checkout -b feature/AmazingFeature).
 
+Build your code 
 
+Commit your changes (git commit -m 'Add some AmazingFeature').
 
-## Team ✨
+Push to the branch (git push origin feature/AmazingFeature).
 
-| <a href="https://rajaprerak.github.io" target="_blank">**Prerak Raja**</a> | <a href="https://varadbhogayata.github.io" target="_blank">**Varad Bhogayata**</a> | 
-| :---: |:---:|
-| [![Prerak Raja](https://github.com/rajaprerak.png?size=100)](https://rajaprerak.github.io)    | [![Varad Bhogayata](https://github.com/varadbhogayata.png?size=100)](https://varadbhogayata.github.io) ||
-| <a href="https://github.com/rajaprerak" target="_blank">`github.com/rajaprerak`</a> | <a href="https://github.com/varadbhogayata" target="_blank">`github.com/varadbhogayata`</a> 
-
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+Open a Pull Request 🔃
