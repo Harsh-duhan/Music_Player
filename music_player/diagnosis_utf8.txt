@@ -1,0 +1,162 @@
+﻿python : Traceback 
+(most recent call 
+last):
+At line:1 char:1
++ python manage.py 
+check > error.txt 
+2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Traceba   
+ ck (most recent     
+call last)::Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+  File "D:\Music Play
+er\music_player\manag
+e.py", line 21, in 
+<module>
+    main()
+    ~~~~^^
+  File "D:\Music Play
+er\music_player\manag
+e.py", line 17, in 
+main
+    execute_from_comm
+and_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~
+~~~~~~~~^^^^^^^^^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\management\_
+_init__.py", line 
+443, in execute_from_
+command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\management\_
+_init__.py", line 
+417, in execute
+    django.setup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\__init__.py", 
+line 24, in setup
+    apps.populate(set
+tings.INSTALLED_APPS)
+    ~~~~~~~~~~~~~^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\apps\registry.py"
+, line 124, in 
+populate
+    
+app_config.ready()
+    
+~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\all
+auth\socialaccount\ap
+ps.py", line 16, in 
+ready
+    registry.load()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\all
+auth\socialaccount\pr
+oviders\__init__.py",
+ line 41, in load
+    provider_module 
+= importlib.import_mo
+dule(module_name)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\importlib\__init_
+_.py", line 88, in 
+import_module
+    return _bootstrap
+._gcd_import(name[lev
+el:], package, level)
+           ~~~~~~~~~~
+~~~~~~~~~~~~^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1387, in 
+_gcd_import
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1360, in 
+_find_and_load
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1331, in _find_a
+nd_load_unlocked
+  File "<frozen impor
+tlib._bootstrap>", 
+line 935, in 
+_load_unlocked
+  File "<frozen impor
+tlib._bootstrap_exter
+nal>", line 1026, in 
+exec_module
+  File "<frozen impor
+tlib._bootstrap>", 
+line 488, in _call_wi
+th_frames_removed
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\all
+auth\socialaccount\pr
+oviders\google\provid
+er.py", line 7, in 
+<module>
+    from allauth.soci
+alaccount.providers.g
+oogle.views import 
+GoogleOAuth2Adapter
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\all
+auth\socialaccount\pr
+oviders\google\views.
+py", line 15, in 
+<module>
+    from allauth.soci
+alaccount.internal 
+import jwtkit
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\all
+auth\socialaccount\in
+ternal\jwtkit.py", 
+line 6, in <module>
+    import jwt
+ModuleNotFoundError: 
+No module named 'jwt'
