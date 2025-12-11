@@ -25,3 +25,5 @@ six
 sqlparse
 text-unidecode
 urllib3
+
+whitenoise
