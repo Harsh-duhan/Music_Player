@@ -1,0 +1,92 @@
+﻿git : remote: error: GH013: 
+Repository rule violations found 
+for refs/heads/main.        
+At line:1 char:1
++ git push -f -u origin main 2> 
+push_error.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo          : Not 
+   Specified: (remote: error: ..  
+  .s/main.        :String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : Nat 
+   iveCommandError
+ 
+remote: 
+remote: - GITHUB PUSH PROTECTION  
+      
+remote:   ΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇö
+ΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓ
+ÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇ
+öΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇö   
+     
+remote:     Resolve the following 
+violations before pushing again   
+     
+remote: 
+remote:     - Push cannot contain 
+secrets        
+remote: 
+remote:             
+remote:      (?) Learn how to 
+resolve a blocked push        
+remote:      https://docs.github.c
+om/code-security/secret-scanning/w
+orking-with-secret-scanning-and-pu
+sh-protection/working-with-push-pr
+otection-from-the-command-line#res
+olving-a-blocked-push        
+remote:             
+remote:             
+remote:       ΓÇöΓÇö Google OAuth 
+Access Token ΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇö
+ΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓ
+ÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇö        
+remote:        locations:        
+remote:          - commit: 1db26bc
+d7aa4cc465756289d4b83c24afd63d94f 
+       
+remote:            path: 
+music_player/db.sqlite3:75        
+remote:             
+remote:        (?) To push, 
+remove secret from commit(s) or 
+follow this URL to allow the 
+secret.        
+remote:        https://github.com/
+Harsh-duhan/Music_Player/security/
+secret-scanning/unblock-secret/36h
+htwJLkseyvR1TIDQ3UqDQ36s        
+remote:             
+remote:             
+remote:       ΓÇöΓÇö Google OAuth 
+Access Token ΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇö
+ΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓ
+ÇöΓÇöΓÇöΓÇöΓÇöΓÇöΓÇö        
+remote:        locations:        
+remote:          - commit: 1db26bc
+d7aa4cc465756289d4b83c24afd63d94f 
+       
+remote:            path: 
+music_player/db.sqlite3:75        
+remote:             
+remote:        (?) To push, 
+remove secret from commit(s) or 
+follow this URL to allow the 
+secret.        
+remote:        https://github.com/
+Harsh-duhan/Music_Player/security/
+secret-scanning/unblock-secret/36h
+htzvqwzA4GZq0GFLNdukPq4j        
+remote:             
+remote: 
+remote: 
+To https://github.com/Harsh-duhan/
+Music_Player.git
+ ! [remote rejected] main -> main 
+(push declined due to repository 
+rule violations)
+error: failed to push some refs 
+to 'https://github.com/Harsh-duhan
+/Music_Player.git'
