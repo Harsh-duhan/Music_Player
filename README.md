@@ -1,4 +1,5 @@
- Galvanic Music: A Django Streaming Platform 🎧
+Access the website at: http://localhost:8000
+Galvanic Music: A Django Streaming Platform 🎧
 A modern, Django-based music streaming website featuring robust user authentication, personalized playlists, and powerful song search/filtering capabilities.
 
 Features
