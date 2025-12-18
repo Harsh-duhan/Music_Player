@@ -335,3 +335,12 @@ reddit/media/
 
 .idea
 db.sqlite3
+
+restart_error.log
+restart_error_utf8.txt
+error.txt
+error.log
+push_error_utf8.txt
+push_error.txt
+diagnosis_traceback
+diagnosis_utf8.txt
