@@ -1,0 +1,279 @@
+﻿python : Watching 
+for file changes 
+with StatReloader
+At line:1 char:1
++ python manage.py 
+runserver > 
+restart_error.log 
+2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Watchin   
+ g for fi...th St    
+atReloader:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+Exception in thread 
+django-main-thread:
+Traceback (most 
+recent call last):
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\servers\base
+http.py", line 49, 
+in get_internal_wsgi_
+application
+    return import_str
+ing(app_path)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\utils\module_load
+ing.py", line 30, in 
+import_string
+    return cached_imp
+ort(module_path, 
+class_name)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\utils\module_load
+ing.py", line 15, in 
+cached_import
+    module = import_m
+odule(module_path)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\importlib\__init_
+_.py", line 88, in 
+import_module
+    return _bootstrap
+._gcd_import(name[lev
+el:], package, level)
+           ~~~~~~~~~~
+~~~~~~~~~~~~^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1387, in 
+_gcd_import
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1360, in 
+_find_and_load
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1331, in _find_a
+nd_load_unlocked
+  File "<frozen impor
+tlib._bootstrap>", 
+line 935, in 
+_load_unlocked
+  File "<frozen impor
+tlib._bootstrap_exter
+nal>", line 1026, in 
+exec_module
+  File "<frozen impor
+tlib._bootstrap>", 
+line 488, in _call_wi
+th_frames_removed
+  File "D:\Music Play
+er\musicplayer\wsgi.p
+y", line 16, in 
+<module>
+    application = get
+_wsgi_application()
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\wsgi.py", 
+line 13, in 
+get_wsgi_application
+    return 
+WSGIHandler()
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\handlers\wsg
+i.py", line 118, in 
+__init__
+    self.load_middlew
+are()
+    ~~~~~~~~~~~~~~~~~
+~~~^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\handlers\bas
+e.py", line 41, in 
+load_middleware
+    middleware = impo
+rt_string(middleware_
+path)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\utils\module_load
+ing.py", line 30, in 
+import_string
+    return cached_imp
+ort(module_path, 
+class_name)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\utils\module_load
+ing.py", line 15, in 
+cached_import
+    module = import_m
+odule(module_path)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\importlib\__init_
+_.py", line 88, in 
+import_module
+    return _bootstrap
+._gcd_import(name[lev
+el:], package, level)
+           ~~~~~~~~~~
+~~~~~~~~~~~~^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1387, in 
+_gcd_import
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1360, in 
+_find_and_load
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1310, in _find_a
+nd_load_unlocked
+  File "<frozen impor
+tlib._bootstrap>", 
+line 488, in _call_wi
+th_frames_removed
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1387, in 
+_gcd_import
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1360, in 
+_find_and_load
+  File "<frozen impor
+tlib._bootstrap>", 
+line 1324, in _find_a
+nd_load_unlocked
+ModuleNotFoundError: 
+No module named 
+'whitenoise'
+
+The above exception 
+was the direct cause 
+of the following 
+exception:
+
+Traceback (most 
+recent call last):
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\threading.py", 
+line 1041, in 
+_bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\threading.py", 
+line 992, in run
+    self._target(*sel
+f._args, 
+**self._kwargs)
+    ~~~~~~~~~~~~^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\utils\autoreload.
+py", line 64, in 
+wrapper
+    fn(*args, 
+**kwargs)
+    
+~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\management\c
+ommands\runserver.py"
+, line 143, in 
+inner_run
+    handler = self.ge
+t_handler(*args, 
+**options)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\contrib\staticfil
+es\management\command
+s\runserver.py", 
+line 31, in 
+get_handler
+    handler = super()
+.get_handler(*args, 
+**options)
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\management\c
+ommands\runserver.py"
+, line 73, in 
+get_handler
+    return get_intern
+al_wsgi_application()
+  File "C:\Users\hars
+h\AppData\Local\Progr
+ams\Python\Python313\
+Lib\site-packages\dja
+ngo\core\servers\base
+http.py", line 51, 
+in get_internal_wsgi_
+application
+    raise 
+ImproperlyConfigured(
+    ...<2 lines>...
+    ) from err
+django.core.exception
+s.ImproperlyConfigure
+d: WSGI application '
+musicplayer.wsgi.appl
+ication' could not 
+be loaded; Error 
+importing module.

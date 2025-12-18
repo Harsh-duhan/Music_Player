@@ -19,9 +19,7 @@ def login_request(request):
         login(request, user)
         # messages.info(request, f"You are now logged in  as {user}")
         return redirect('index')
-    else:
-        print(form.errors)
-        # messages.error(request, 'Username or Password is Incorrect! ')
+    # messages.error(request, 'Username or Password is Incorrect! ')
     return render(request, 'authentication/login.html', context=context)
 
 

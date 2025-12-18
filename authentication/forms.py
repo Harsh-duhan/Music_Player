@@ -4,6 +4,7 @@ from django import forms
 from django.contrib.auth import authenticate
 
 
+
 class UserLoginForm(forms.Form):
     username = forms.CharField(widget=forms.TextInput(attrs={'class': 'validate', 'placeholder': 'Enter Username'}))
     password = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Enter Password'}))
@@ -15,11 +16,9 @@ class UserLoginForm(forms.Form):
         if username and password:
             user = authenticate(username=username, password=password)
             if not user:
-                raise forms.ValidationError("This user does not exist!")
-            if not user.check_password(password):
-                raise forms.ValidationError("Incorrect password!")
+                raise forms.ValidationError("Invalid username or password.")
             if not user.is_active:
-                raise forms.ValidationError("This user is not active")
+                raise forms.ValidationError("This user is not active.")
         return super(UserLoginForm, self).clean(*args, **kwargs)
 
 
@@ -33,10 +32,12 @@ class RegistrationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['username', 'password1', 'password2', ]
+        fields = ['username']
 
     def save(self, commit=True):
         user = super(RegistrationForm, self).save(commit=False)
+        user.set_password(self.cleaned_data["password1"])
         if commit:
             user.save()
         return user
+
